@@ -1,0 +1,28 @@
+{
+  "novels": [
+    {
+      "title": "Oregairu",
+      "author": "Wataru Watari",
+      "category": "light novel",
+      "id": 1
+    },
+    {
+      "title": "Gekkou",
+      "author": "Mamiya Natsuki",
+      "category": "light novel",
+      "id": 3
+    },
+    {
+      "title": "Majo no tabitabi",
+      "author": "Jougi Shiraishi",
+      "category": "light novel",
+      "id": 4
+    },
+    {
+      "title": "Love is war",
+      "author": "Akasaka Aka",
+      "category": "manga",
+      "id": 5
+    }
+  ]
+}

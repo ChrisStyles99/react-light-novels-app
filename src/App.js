@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import NovelForm from './components/NovelForm';
+import NovelList from './components/NovelList';
+import Posts from './components/Posts';
+import SearchNovel from './components/SearchNovel';
+import NovelContextProvider from './context/NovelContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container">
+      <NovelContextProvider>
+        <Router>
+          <Navbar className=""/>
+          <Switch>
+            <Route exact path="/">
+              <NovelForm />
+              <NovelList />
+            </Route>
+            <Route path="/posts">
+              <Posts />
+            </Route>
+            <Route path="/search">
+              <SearchNovel />
+            </Route>
+          </Switch>
+        </Router>
+      </NovelContextProvider>      
     </div>
   );
 }

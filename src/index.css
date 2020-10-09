@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ln-square {
+  width: 10px;
+  height: 10px;
+  background-color: #EE6E73;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.manga-square {
+  width: 10px;
+  height: 10px;
+  background-color: #2BBBAD;
+  display: inline-block;
+}
